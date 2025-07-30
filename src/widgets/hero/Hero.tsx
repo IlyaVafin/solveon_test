@@ -1,12 +1,11 @@
-import Slider from "@/features/hero-slider/ui/Slider"
-
+import SliderContainer from '@/features/hero-slider/ui/SliderContainer';
 
 const Hero = () => {
-	return (
-		<section>
-			<Slider/>
-		</section>
-	)
-}
+  return (
+    <section>
+      <SliderContainer />
+    </section>
+  );
+};
 
-export default Hero 
+export default Hero;

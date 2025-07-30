@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 475px) {
   .sale {
     gap: 5px;
   }

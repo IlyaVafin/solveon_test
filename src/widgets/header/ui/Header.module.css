@@ -109,7 +109,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .headerTitle {
     align-items: flex-start;
   }

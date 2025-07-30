@@ -31,6 +31,8 @@
 .headerMoreList {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 99;
   gap: 20px;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -92,12 +94,6 @@
 @media (max-width: 1024px) {
   .headerMoreList ul li a {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 928px) {
-  .headerMoreList {
-    width: 200px;
   }
 }
 

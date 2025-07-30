@@ -1,14 +1,15 @@
-import { getSliderPhotos } from "../api/getSliderPhotos"
+import { getSliderPhotos } from '../api/getSliderPhotos';
+import Slider from './Slider';
 
 const SliderContainer = async () => {
-	const sliderPhotos = await getSliderPhotos()
-	console.log(sliderPhotos);
-	
-	return (
-		<>
-		
-		</>
-	)
-}
+  const sliderPhotos = await getSliderPhotos();
+  console.log(sliderPhotos);
 
-export default SliderContainer
+  return (
+    <div>
+      <Slider data={sliderPhotos} />
+    </div>
+  );
+};
+
+export default SliderContainer;

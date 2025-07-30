@@ -1,0 +1,198 @@
+.sliderServices {
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.servicesMore {
+  display: flex;
+  position: absolute;
+  top: 355px;
+  right: 150px;
+}
+
+.photoTitle {
+  font-family: var(--font-comfortaa);
+  font-weight: 400;
+  margin-bottom: 14px;
+  margin-top: 44px;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.servicesMore span {
+  font-family: var(--font-zrnic);
+  font-weight: 400;
+  font-style: Normal;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: lowercase;
+  color: #060606;
+  position: absolute;
+  top: 240px;
+  left: 20px;
+}
+
+.linksInfo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linksInfo a {
+  font-family: var(--font-comfortaa);
+  font-weight: 700;
+  font-style: Bold;
+  color: #060606;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-align: right;
+}
+
+.sliderServices img {
+  border-top-left-radius: 280px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 280px;
+  border-bottom-right-radius: 340px;
+  height: auto;
+}
+
+.mySwiper :global(.swiper-pagination) {
+  position: relative;
+}
+
+.mySwiper :global(.swiper-pagination-bullet) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #06060633;
+  border: 1px solid #060606;
+  opacity: 1;
+  margin: 0 6px;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.mySwiper :global(.swiper-pagination-bullet-active) {
+  background: #060606;
+}
+
+@media (max-width: 1360px) {
+  .sliderServices {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .sliderServices img {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+  }
+  .servicesMore img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sliderServices {
+    max-width: 928px;
+    margin: 0 auto;
+  }
+  .photoTitle {
+    font-size: 18px;
+  }
+  .linksInfo a {
+    font-size: 18px;
+  }
+  .mySwiper :global(.swiper-pagination-bullet) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 945px) {
+  .servicesMore {
+    top: 200px;
+    right: 0;
+  }
+
+  .sliderServices {
+    max-width: 832px;
+  }
+}
+
+@media (max-width: 860px) {
+  .sliderServices {
+    max-width: 764px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photoTitle {
+    font-size: 16px;
+  }
+  .servicesMore {
+    top: 150px;
+  }
+  .servicesMore span {
+    top: 160px;
+  }
+  .servicesMore img {
+    width: 200px;
+  }
+  .sliderServices {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .linksInfo a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .photoTitle {
+    font-size: 14px;
+  }
+  .mySwiper :global(.swiper-pagination-bullet) {
+    width: 8px;
+    height: 8px;
+  }
+  .sliderServices {
+    margin: 0 24px;
+  }
+  .servicesMore img {
+    width: 150px;
+  }
+  .servicesMore span {
+    font-size: 14px;
+    top: 120px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .linksInfo {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .linksInfo a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .servicesMore img {
+    width: 100px;
+  }
+  .servicesMore span {
+    top: 80px;
+  }
+}
