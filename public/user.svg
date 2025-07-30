@@ -1,0 +1,10 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="black" xmlns="http://www.w3.org/2000/svg">
+  <!-- Внешний круг -->
+  <circle cx="50" cy="50" r="48" stroke-width="2" fill="none"/>
+  
+  <!-- Голова пользователя -->
+  <circle cx="50" cy="35" r="10" stroke-width="2" fill="none"/>
+  
+  <!-- Плечи и грудь (полукруг) -->
+  <path d="M30,70 A20,20 0 0,1 70,70" stroke-width="2" fill="none"/>
+</svg>

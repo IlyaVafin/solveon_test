@@ -1,0 +1,10 @@
+.burgerButton {
+  background: #060606;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}

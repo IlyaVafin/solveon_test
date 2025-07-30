@@ -1,0 +1,150 @@
+.headerMore a {
+  font-family: var(--font-comfortaa);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #060606;
+}
+
+.moreLink {
+  background: none;
+  border: none;
+  font-family: var(--font-comfortaa);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #060606;
+  margin-left: 28px;
+  transition: opacity 0.4s ease;
+}
+
+.moreLink:hover {
+  opacity: 0.5;
+}
+
+.headerMore {
+  max-width: 20px;
+}
+
+.headerMoreList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  background: #efefef99;
+  border-radius: 20px;
+  width: 329px;
+  height: auto;
+  padding: 16px 20px;
+  margin-top: 24px;
+  transition: opacity 0.5s ease;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+.headerMoreList li a {
+  font-size: 18px;
+  transition: opacity 0.4s ease;
+}
+
+.headerMoreList li a:hover {
+  opacity: 0.5;
+}
+
+.specialLink {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+@media (max-width: 1360px) {
+  .headerMoreList a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .specialLink {
+    gap: 6px;
+  }
+  .headerMoreList {
+    max-width: 230px;
+  }
+}
+@media (max-width: 1024px) {
+  .headerMoreList ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 928px) {
+  .headerMoreList {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerMoreSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    margin-top: 24px;
+    padding-left: 24px;
+    margin-bottom: 26px;
+  }
+
+  .headerMore .hide {
+    width: 271px;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+  }
+
+  .headerMore .show {
+    max-height: 310px;
+    transition: max-height 0.5s ease;
+  }
+
+  .moreLink {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .headerMoreSidebar li a {
+    font-size: 16px;
+    transition: opacity 0.4s ease;
+  }
+  .headerMoreSidebar li a:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .moreLink {
+    font-size: 16px;
+  }
+  .headerMoreSidebar li a {
+    font-size: 14px;
+  }
+  .headerMoreSidebar {
+    width: 243px;
+  }
+}
+
