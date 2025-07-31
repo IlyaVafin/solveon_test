@@ -1,0 +1,285 @@
+@keyframes change-height {
+  from {
+    height: 110px;
+  }
+  to {
+    height: 382px;
+  }
+}
+
+@keyframes change-height-to-unactive {
+  from {
+    height: 382px;
+  }
+  to {
+    height: 113px;
+  }
+}
+
+@keyframes show-active {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.serviceCardUnActive {
+  background: linear-gradient(270deg, #ffffff 30.33%, #efefef 100%);
+  border-top: 2px solid #dbbaba33;
+  padding: 10px 40px;
+  animation: change-height-to-unactive 1s;
+}
+
+.serviceCardUnActive button {
+  width: 56px;
+  height: 29px;
+  border: none;
+  border-radius: 40px;
+  background-color: #060606;
+  color: #fff;
+}
+
+.serviceContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.serviceNumber {
+  font-family: var(--font-comfortaa);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  border: 1px solid #06060633;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 29px;
+}
+.serviceTitle {
+  font-family: var(--font-zrnic);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #060606;
+  transition: opacity 0.5s ease;
+}
+
+.serviceTitle:hover {
+  opacity: 0.5;
+}
+
+.serviceCardInfo {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.serviceImage {
+  border-radius: 50%;
+}
+
+.serviceCardActive {
+  animation: change-height 1s;
+}
+
+.serviceContentActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  margin-top: 42px;
+  padding: 0 40px;
+  animation: show-active 3s;
+  gap: 100px;
+}
+
+.activeTitle {
+  font-family: var(--font-zrnic);
+  max-width: 423px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #060606;
+}
+
+.activeDescription {
+  font-family: var(--font-comfortaa);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  max-width: 400px;
+}
+
+.serviceActiveCardImage {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  @keyframes change-height {
+    from {
+      height: 110px;
+    }
+    to {
+      height: 331px;
+    }
+  }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: flex;
+    padding: 16px 48px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceCardUnActive {
+    padding: 10px 48px;
+  }
+  .serviceTitle {
+    font-size: 28px;
+  }
+  .serviceNumber {
+    font-size: 18px;
+  }
+  .serviceCardUnActive button {
+    width: 46px;
+    height: 24px;
+  }
+  .activeTitle {
+    font-size: 52px;
+    margin-bottom: 16px;
+  }
+  .activeDescription {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes change-height {
+    from {
+      height: 110px;
+    }
+    to {
+      height: 258px;
+    }
+  }
+  .tablet {
+    padding: 10px 16px;
+  }
+  .activeTitle {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+  .serviceActiveCardImage {
+    width: 239px;
+    height: 239px;
+  }
+  .activeDescription {
+    font-size: 16px;
+  }
+  .serviceTitle {
+    font-size: 24px;
+  }
+  .serviceNumber {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  @keyframes change-height {
+    from {
+      height: 110px;
+    }
+    to {
+      height: 412px;
+    }
+  }
+  .tablet {
+    position: relative;
+    height: 412px;
+  }
+  .activeDescription {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    max-width: 528px;
+  }
+  .serviceTitle {
+    font-size: 20px;
+  }
+  .serviceActiveCardImage {
+    width: 171px;
+    height: 171px;
+  }
+  .serviceNumber {
+    font-size: 14px;
+    height: 21px;
+    width: 21px;
+  }
+  .activeTitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 440px) {
+  .serviceContent {
+    width: 100%;
+  }
+  .serviceCardUnActive {
+    display: flex;
+    align-items: center;
+    height: 86px;
+  }
+  @keyframes change-height {
+    from {
+      height: 86px;
+    }
+    to {
+      height: 382px;
+    }
+  }
+  @keyframes change-height-to-unactive {
+    from {
+      height: 382px;
+    }
+    to {
+      height: 86px;
+    }
+  }
+  .tablet {
+    height: 382px;
+  }
+  .serviceImage {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .activeTitle {
+    font-size: 28px;
+  }
+  .activeDescription {
+    font-size: 12px;
+  }
+}

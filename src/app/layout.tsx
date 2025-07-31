@@ -9,11 +9,10 @@ const comfortaa = Comfortaa({
   subsets: ['latin'],
 });
 
-
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin']
-})
+  subsets: ['latin'],
+});
 
 const Zrnic = localFont({
   src: './fonts/ZrnicCyr-Normal.woff2',
@@ -32,9 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SidebarProvider>
-        <body className={`${comfortaa.variable} ${Zrnic.variable} ${inter.variable}`}>{children}</body>
-      </SidebarProvider>
+      <body className={`${comfortaa.variable} ${Zrnic.variable} ${inter.variable}`}>
+        {children}
+ 
+      </body>
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import { SliderPhotos } from "../types";
+import { SliderPhotos } from "../../../shared/types";
 
 
 export const getSliderPhotos = async (): Promise<SliderPhotos> => {

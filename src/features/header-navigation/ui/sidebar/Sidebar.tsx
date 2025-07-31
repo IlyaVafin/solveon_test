@@ -15,7 +15,7 @@ const Sidebar = () => {
       <aside className={`${s.sidebar} ${open ? s.show : s.hide}`}>
         <header className={s.sidebarHeader}>
           <p className={s.sidebarTitle}>Центр лазерной медицины</p>
-          <Button onClick={closeSidebar} variant="black button">
+          <Button style={{borderRadius: '50%'}}  onClick={closeSidebar} variant="black button">
             <Image src="/close.svg" alt="close-button" width={32} height={32} />
           </Button>
         </header>

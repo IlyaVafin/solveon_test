@@ -34,8 +34,8 @@
   position: relative;
   z-index: 99;
   gap: 20px;
-  backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   background: #efefef99;
   border-radius: 20px;
   width: 329px;
@@ -143,4 +143,3 @@
     width: 243px;
   }
 }
-

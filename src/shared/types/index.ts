@@ -10,6 +10,12 @@ export interface sliderPhoto {
   url: string;
 }
 
+export interface sliderPhotoById {
+  success: boolean;
+  message: string;
+  photo: sliderPhoto;
+}
+
 export interface SliderPhotos {
   success: boolean;
   message: string;

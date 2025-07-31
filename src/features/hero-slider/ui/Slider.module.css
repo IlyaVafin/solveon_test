@@ -63,7 +63,11 @@
 }
 
 .mySwiper :global(.swiper-pagination) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  gap: 16px;
 }
 
 .mySwiper :global(.swiper-pagination-bullet) {
@@ -73,7 +77,6 @@
   background: #06060633;
   border: 1px solid #060606;
   opacity: 1;
-  margin: 0 6px;
   transition:
     background 0.3s ease,
     border-color 0.3s ease;

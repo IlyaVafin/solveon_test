@@ -16,7 +16,6 @@ const HeaderMore = ({ variant }: { variant: 'header more' | 'sidebar more' }) =>
         onFocus={showLinks}
         className={s.moreLink}
         onMouseEnter={showLinks}
-        
       >
         Еще:
       </button>

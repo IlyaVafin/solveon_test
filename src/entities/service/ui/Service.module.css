@@ -1,0 +1,41 @@
+.service {
+  margin-top: 40px;
+}
+.serviceHeader {
+  display: flex;
+	align-items: center;
+  justify-content: space-between;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.serviceHeader li {
+  display: flex;
+	align-items: center;
+  gap: 8px;
+  font-family: var(--font-comfortaa);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+	color: #060606;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #060606;
+  border-radius: 50%;
+}
+
+.cards {
+  margin-top: 20px;
+}
+
+.buttonImage {
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}

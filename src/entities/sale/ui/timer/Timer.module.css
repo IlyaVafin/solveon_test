@@ -1,0 +1,15 @@
+
+.timer span {
+  font-family: var(--font-comfortaa);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fdfeff;
+}
+
+@media (max-width: 595px) {
+  .timer {
+    display: none;
+  }
+}
