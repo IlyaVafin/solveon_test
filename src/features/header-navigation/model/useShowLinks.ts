@@ -5,7 +5,7 @@ export const useShowLinks = () => {
 
   const showLinks = () => setShow(true);
   const hideLinks = () => setShow(false);
-	
+
   const hideLinksOnBlur = (event: FocusEvent<HTMLDivElement>) => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
       setShow(false);

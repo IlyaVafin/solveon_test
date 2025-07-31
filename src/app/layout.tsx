@@ -33,7 +33,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${comfortaa.variable} ${Zrnic.variable} ${inter.variable}`}>
         {children}
- 
       </body>
     </html>
   );

@@ -6,10 +6,8 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   turbopack: {
-    rules: {
-      
-    }
-  }
+    rules: {},
+  },
 };
 
 export default nextConfig;
